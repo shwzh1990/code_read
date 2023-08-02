@@ -1,0 +1,47 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+HTTP09	webbench.c	/^  HTTP09 = 0,$/;"	e	enum:__anone84644340103	file:
+HTTP10	webbench.c	/^  HTTP10,$/;"	e	enum:__anone84644340103	file:
+HTTP11	webbench.c	/^  HTTP11$/;"	e	enum:__anone84644340103	file:
+MAX_REQUEST_SIZE	webbench.c	/^#define MAX_REQUEST_SIZE /;"	d	file:
+METHOD_GET	webbench.c	/^#define METHOD_GET /;"	d	file:
+METHOD_HEAD	webbench.c	/^#define METHOD_HEAD /;"	d	file:
+METHOD_OPTIONS	webbench.c	/^#define METHOD_OPTIONS /;"	d	file:
+METHOD_TRACE	webbench.c	/^#define METHOD_TRACE /;"	d	file:
+PROGARM_VERSION	webbench.c	/^#define PROGARM_VERSION /;"	d	file:
+Socket	socket.c	/^int Socket(const char* host, int clientPort)$/;"	f	typeref:typename:int
+__anone84644340103	webbench.c	/^{$/;"	g	file:
+__anone84644340208	webbench.c	/^typedef struct {$/;"	s	file:
+alarm_handler	webbench.c	/^static void alarm_handler(int signal)$/;"	f	typeref:typename:void	file:
+bench	webbench.c	/^static int bench(void)$/;"	f	typeref:typename:int	file:
+benchcore	webbench.c	/^void benchcore(const char *host,const int port,const char *req)$/;"	f	typeref:typename:void
+benchtime	webbench.c	/^   int benchtime;$/;"	m	struct:__anone84644340208	typeref:typename:int	file:
+build_request	webbench.c	/^static void build_request(const char* url)$/;"	f	typeref:typename:void	file:
+bytes	webbench.c	/^   unsigned int bytes;$/;"	m	struct:__anone84644340208	typeref:typename:unsigned int	file:
+clients	webbench.c	/^   int clients;$/;"	m	struct:__anone84644340208	typeref:typename:int	file:
+failed	webbench.c	/^   int failed;$/;"	m	struct:__anone84644340208	typeref:typename:int	file:
+force	webbench.c	/^   int force;$/;"	m	struct:__anone84644340208	typeref:typename:int	file:
+force_reload	webbench.c	/^   int force_reload;$/;"	m	struct:__anone84644340208	typeref:typename:int	file:
+host	webbench.c	/^   char host[MAXHOSTNAMELEN];   \/\/MAXHOSTNAMELEN 64 in linux kernel$/;"	m	struct:__anone84644340208	typeref:typename:char[]	file:
+http_t	webbench.c	/^}http_t;$/;"	t	typeref:enum:__anone84644340103	file:
+http_type	webbench.c	/^   http_t http_type;$/;"	m	struct:__anone84644340208	typeref:typename:http_t	file:
+long_options	webbench.c	/^static const struct option long_options[] = $/;"	v	typeref:typename:const struct option[]	file:
+main	pipsample.c	/^int main(void)$/;"	f	typeref:typename:int
+main	webbench.c	/^int main(int argc, char** argv)$/;"	f	typeref:typename:int
+method	webbench.c	/^   int method;$/;"	m	struct:__anone84644340208	typeref:typename:int	file:
+mypipe	webbench.c	/^   int mypipe[2];$/;"	m	struct:__anone84644340208	typeref:typename:int[2]	file:
+proxyhost	webbench.c	/^   char* proxyhost;$/;"	m	struct:__anone84644340208	typeref:typename:char *	file:
+proxyport	webbench.c	/^   int proxyport;$/;"	m	struct:__anone84644340208	typeref:typename:int	file:
+request	webbench.c	/^   char request[MAX_REQUEST_SIZE];$/;"	m	struct:__anone84644340208	typeref:typename:char[]	file:
+speed	webbench.c	/^   int speed;$/;"	m	struct:__anone84644340208	typeref:typename:int	file:
+timerexpired	webbench.c	/^   volatile unsigned int timerexpired;$/;"	m	struct:__anone84644340208	typeref:typename:volatile unsigned int	file:
+usage	webbench.c	/^static void usage(void)$/;"	f	typeref:typename:void	file:
+webbench	webbench.c	/^webbench_t webbench = {$/;"	v	typeref:typename:webbench_t
+webbench_t	webbench.c	/^}webbench_t;$/;"	t	typeref:struct:__anone84644340208	file:
