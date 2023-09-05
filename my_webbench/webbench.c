@@ -403,7 +403,7 @@ static int bench(void) {
    * will wake up and break from the for loop.
    * */
   for (i = 0; i < webbench.clients; i++) {
-    pid = fork();
+    pid = vfork();
     if (pid <= (pid_t)0) {
       sleep(1);
       break;
@@ -435,7 +435,7 @@ static int bench(void) {
     fprintf(f, "%d %d %d\n", webbench.speed, webbench.failed, webbench.bytes);
     // fprintf(f, "%d %d %d\n", 1, 1, 1);
     fclose(f);
-    return 0;
+    _exit(0);
   } else {
     /*here is the parent process*/
     close(webbench.mypipe[1]);
@@ -481,7 +481,6 @@ void benchcore(const char *host, const int port, const char *req) {
   char buff[1500];
   int s, i;
   struct sigaction sa;
-  printf("%s\n", req);
 
   /* setup alarm signal handler*/
   sa.sa_handler = alarm_handler;
