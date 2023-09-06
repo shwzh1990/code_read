@@ -1,0 +1,48 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+$(OBJ_CLIENT)	makefile	/^$(OBJ_CLIENT): client.cpp $(SRC)$/;"	t
+$(OBJ_SERVER)	makefile	/^$(OBJ_SERVER): server.cpp $(SRC) $/;"	t
+EPOLL_H	Epoll.h	/^#define EPOLL_H$/;"	d
+Epoll	Epoll.cpp	/^Epoll::Epoll(): epfd(-1), events(nullptr)$/;"	f	class:Epoll
+Epoll	Epoll.h	/^class Epoll $/;"	c
+INETADDRESS_H	InetAddress.h	/^#define INETADDRESS_H$/;"	d
+InetAddress	InetAddress.cpp	/^InetAddress::InetAddress(): addr_len(sizeof(addr))$/;"	f	class:InetAddress
+InetAddress	InetAddress.cpp	/^InetAddress::InetAddress(const char* ip, uint16_t port)$/;"	f	class:InetAddress
+InetAddress	InetAddress.h	/^class InetAddress $/;"	c
+MAX_EVENTS	Epoll.cpp	/^#define MAX_EVENTS /;"	d	file:
+MAX_EVENTS	server.cpp	/^#define MAX_EVENTS /;"	d	file:
+OBJ_CLIENT	makefile	/^OBJ_CLIENT = client$/;"	m
+OBJ_SERVER	makefile	/^OBJ_SERVER = server$/;"	m
+READ_BUFFER	server.cpp	/^#define READ_BUFFER /;"	d	file:
+SOCKET_H	Socket.h	/^#define SOCKET_H$/;"	d
+SOCKMAX	server.cpp	/^#define SOCKMAX /;"	d	file:
+SRC	makefile	/^SRC = util.cpp$/;"	m
+Socket	Socket.cpp	/^Socket::Socket(): fd(-1)$/;"	f	class:Socket
+Socket	Socket.cpp	/^Socket::Socket(int _fd): fd(_fd)$/;"	f	class:Socket
+Socket	Socket.h	/^class Socket $/;"	c
+UTIL_H	util.h	/^#define UTIL_H$/;"	d
+accept	Socket.cpp	/^int Socket::accept(InetAddress* addr)$/;"	f	class:Socket	typeref:typename:int
+addFd	Epoll.cpp	/^void Epoll::addFd(int fd, uint32_t op)$/;"	f	class:Epoll	typeref:typename:void
+addr_len	InetAddress.h	/^    int addr_len;$/;"	m	class:InetAddress	typeref:typename:int
+all	makefile	/^all: $(OBJ_CLIENT) $(OBJ_SERVER)$/;"	t
+bind	Socket.cpp	/^void Socket::bind(InetAddress* addr)$/;"	f	class:Socket	typeref:typename:void
+clean	makefile	/^clean:$/;"	t
+epfd	Epoll.h	/^    int epfd;$/;"	m	class:Epoll	typeref:typename:int
+errif	util.cpp	/^void errif(bool condition, const char* msg)$/;"	f	typeref:typename:void
+events	Epoll.h	/^    struct epoll_event *events;$/;"	m	class:Epoll	typeref:struct:epoll_event *
+getFd	Socket.cpp	/^int Socket::getFd()$/;"	f	class:Socket	typeref:typename:int
+listen	Socket.cpp	/^void Socket::listen()$/;"	f	class:Socket	typeref:typename:void
+main	client.cpp	/^int main()$/;"	f	typeref:typename:int
+main	server.cpp	/^int main()$/;"	f	typeref:typename:int
+poll	Epoll.cpp	/^std::vector<epoll_event> Epoll::poll(int timeout)$/;"	f	class:Epoll	typeref:typename:std::vector<epoll_event>
+setnonblocking	server.cpp	/^void setnonblocking(int fd)$/;"	f	typeref:typename:void
+~Epoll	Epoll.cpp	/^Epoll::~Epoll()$/;"	f	class:Epoll
+~InetAddress	InetAddress.cpp	/^InetAddress::~InetAddress()$/;"	f	class:InetAddress
+~Socket	Socket.cpp	/^Socket::~Socket()$/;"	f	class:Socket
